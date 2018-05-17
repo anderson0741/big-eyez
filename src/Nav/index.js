@@ -10,19 +10,6 @@ import styled from 'styled-components';
 import './Nav.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
-const SNav = styled.div`
-    display: grid;
-    position: absolute;
-    height: 50;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    backgroundColor: transparent;
-    border: none;
-    width: 100vw;
-    height: 60px;
-    
-`;
 const StyledLink = styled(Link)`
     color: white;
     font-size: 30px;
@@ -44,8 +31,9 @@ class Nav extends Component {
             <div className="outerNavDiv">
                 <div className="navBod">
                     {/* <img className='imgs' src={Logo} alt="" /> */}
+                    <h1 className="big">Big Eyes Esthetics</h1>
                     <div className="menuOptions">
-                        <SNav className="navBod_nav guest">
+                        <div className="navBod_nav guest">
                             <button className="dropbtn">Menu</button>
                             <div className="nav_dropdwn">
                                 <StyledLink smooth="true" className='links' to="/#home">Home</StyledLink>
@@ -59,7 +47,7 @@ class Nav extends Component {
                                     <a className='links' onClick={this.props.logout}>Logout</a>
                                 </div>
                             </div> : null}
-                        </SNav>
+                        </div>
                     </div>
                 </div>
                 <div className="functionalDiv">

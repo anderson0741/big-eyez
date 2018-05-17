@@ -1,12 +1,18 @@
-
-
 @media (min-width: 787px) {
     .outerNavDiv {
         display: flex;
         justify-content: center;
     }
-    .functionalDiv{
+    .functionalDiv {
         display: none;
+    }
+    .big {
+        color: rgb(236, 78, 92);
+        font-family: "Great Vibes", cursive;
+        font-weight: normal;
+        margin-bottom: 0px;
+        text-align: center;
+        text-shadow: 0 1px 1px #fff;
     }
     .navBod {
         background-color: rgba(255, 255, 255, 0.9);
@@ -18,8 +24,8 @@
         height: 65px;
         width: 70vw;
         display: flex;
-        /* flex-direction: row-reverse; */
-        /* justify-content: space-between; */
+        flex-direction: row-reverse;
+        justify-content: space-between;
         align-items: center;
         border: black 1px solid;
         padding-left: 10px;
@@ -29,7 +35,7 @@
     .dropbtn {
         background-color: rgb(236, 78, 92);
         color: white;
-        margin: auto;
+        margin: 2px;
         height: 55px;
         width: 85px;
         /* padding: 16px; */
@@ -76,6 +82,7 @@
         opacity: 0.9;
     }
 }
+
 @media (max-width: 786px) {
     .functionalDiv {
         position: fixed;
@@ -170,11 +177,10 @@
         padding: 10px 0;
         font-size: 22px;
     }
-
     .menuToggle input:checked~ul {
         transform: none;
     }
-    .navBod{
+    .navBod {
         display: none;
     }
 }

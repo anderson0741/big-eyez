@@ -38,7 +38,7 @@ function Home() {
                 <Overlay id="">
                     <Title>
                         <Name>Mary Anderson</Name>
-                        <Subtitle>-Master Esthetician</Subtitle>
+                        <Subtitle>- Master Esthetician</Subtitle>
                     </Title>
                 </Overlay>
             </div>
