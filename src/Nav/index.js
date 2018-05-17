@@ -48,7 +48,7 @@ class Nav extends Component {
                         <SNav className="navBod_nav guest">
                             <button className="dropbtn">Menu</button>
                             <div className="nav_dropdwn">
-                                <StyledLink smooth="true" className='links' to="/#">Home</StyledLink>
+                                <StyledLink smooth="true" className='links' to="/#home">Home</StyledLink>
                                 <StyledLink smooth="true" className='links' to="/#about">About</StyledLink>
                                 <StyledLink smooth="true" className='links' to="/#contact">Contact</StyledLink>
                             </div>
@@ -71,10 +71,10 @@ class Nav extends Component {
                             <span></span>
 
                             <ul className="menu">
-                                <StyledLink className="navLink" to="/#"><li>Home</li></StyledLink>
-                                {/* <StyledLink className="navLink" to="/#about"><li>About</li></a> */}
-                                <StyledLink className="navLink" to="/#about"><li>About</li></StyledLink>
-                                <StyledLink className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
+                                <StyledLink smooth="true" className="navLink" to="/#home"><li>Home</li></StyledLink>
+                                {/* <StyledLink smooth="true" className="navLink" to="/#about"><li>About</li></a> */}
+                                <StyledLink smooth="true" className="navLink" to="/#about"><li>About</li></StyledLink>
+                                <StyledLink smooth="true" className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
                             </ul>
                         </div>
                     </nav>

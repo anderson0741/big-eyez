@@ -9,11 +9,16 @@ const Wrapper = styled.section`
     background: rgba(105, 60, 46, 0.5);
     height: 100vh;
     width: 100%;
+
+    @media (max-width: 420px){
+        height: 900px;
+    }
     
 `;
 const Main = styled.div`
     align-self: center;
-    margin-top: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
 
     @media (max-width: 420px){
         height: 200px;
@@ -67,8 +72,7 @@ function About() {
             <Content>
                 <div>
                     {/* <Cont>Contact</Cont> */}
-                    <SubHead>Becoming an Esthetician has been such an amazing experience. I love that I can help people feel beautiful and confident especially since this amazing field has helped me feel that way. My expertise are lashes, waxing and microdermabrasion, I love all these treatments because the results are seen really quickly! I love seeing the joy in my clients eyes after each appointment and I want to continue bringing joy to those who seek it and I am excited to meet all different kinds of people along the way!
-                    </SubHead>
+                    <SubHead>Becoming an Esthetician has been such an amazing experience. I love that I can help people feel beautiful and confident especially since this amazing field has helped me feel that way. My expertise are lashes, waxing and microdermabrasion, I love all these treatments because the results are seen really quickly! I love seeing the joy in my clients eyes after each appointment and I want to continue bringing joy to those who seek it and I am excited to meet all different kinds of people along the way!</SubHead>
                 </div>
             </Content>
         </Wrapper>

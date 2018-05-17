@@ -3,34 +3,18 @@ import styled from 'styled-components';
 import Mary from '../images/Mary.jpg';
 
 const Wrapper = styled.section`
-    display: grid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     background: rgba(135, 97, 67, 0.5);
     height: 100vh;
     width: 100%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr ;
     @media (max-width: 420px){
-        grid-template-areas:
-        'm'
-        'c'
+        height: 400px;
     }
     grid-template-areas:
         'm c'
-`;
-const Main = styled.div`
-    grid-area: m;
-    align-self: center;
-    margin-left: 360px;
-   
-    @media (max-width: 420px){
-        height: 200px;
-    }
-`;
-const Image = styled.img`
-    border-radius: 50%;
-    height: 200px;
-    
 `;
 const Content = styled.div`
     grid-area: c;
@@ -65,11 +49,11 @@ const TextBox = styled.textarea`
 function Contact() {
     return (
         <Wrapper id="contact">
-            <Main>
+            {/* <Main>
                 <h1>Contact Me</h1>
                 <p>I am an Esthetician.</p>
                 <Image src={Mary} alt="Pic of Mary" />
-            </Main>
+            </Main> */}
             <Content>
                 <div>
                     <Cont>Contact</Cont>
