@@ -6,6 +6,7 @@ import RightSideBar from '../SideBars/RightSideBar';
 import Home from '../shared/Home';
 import About from '../shared/About';
 import Contact from '../shared/Contact';
+import Options from '../shared/Options';
 
 import styled from 'styled-components';
 import '../styles/app.css';
@@ -22,12 +23,8 @@ function App() {
         <Wrapper>
             <Nav />
             <Home/>
-            {/* <Switch>
-                <Route path="/" component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/contact" component={Contact} />
-            </Switch> */}
             <About/>
+            <Options/>
             <Contact/>
         </Wrapper>
     )

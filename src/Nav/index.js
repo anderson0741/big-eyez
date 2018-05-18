@@ -39,6 +39,7 @@ class Nav extends Component {
                             <div className="nav_dropdwn">
                                 <StyledLink smooth="true" className='links' to="/#home">Home</StyledLink>
                                 <StyledLink smooth="true" className='links' to="/#about">About</StyledLink>
+                                <StyledLink smooth="true" className='links' to="/#options">Options</StyledLink>
                                 <StyledLink smooth="true" className='links' to="/#contact">Contact</StyledLink>
                                 <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
                                     <div className="social_icon">
@@ -68,7 +69,7 @@ class Nav extends Component {
 
                             <ul className="menu">
                                 <StyledLink smooth="true" className="navLink" to="/#home"><li>Home</li></StyledLink>
-                                {/* <StyledLink smooth="true" className="navLink" to="/#about"><li>About</li></a> */}
+                                <StyledLink smooth="true" className="navLink" to="/#options"><li>Options</li></StyledLink>
                                 <StyledLink smooth="true" className="navLink" to="/#about"><li>About</li></StyledLink>
                                 <StyledLink smooth="true" className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
                                 <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
