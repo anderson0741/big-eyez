@@ -54,7 +54,7 @@ const StyledInput = styled.input`
 const SubHead = styled.h4`
     align-self: center;
     margin: auto;
-    width: 60%;
+    width: 330px;
 `;
 const TextBox = styled.textarea`
     height: 100px;

@@ -23,8 +23,8 @@ function App() {
         <Wrapper>
             <Nav />
             <Home/>
-            <About/>
             <Options/>
+            <About/>
             <Contact/>
         </Wrapper>
     )
