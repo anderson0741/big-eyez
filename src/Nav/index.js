@@ -11,6 +11,9 @@ import instagram from '../images/instagram1.png';
 import './Nav.css';
 import { HashLink as Link } from 'react-router-hash-link';
 
+const NavWrap = styled.section`
+
+`
 const StyledLink = styled(Link) `
     color: white;
     font-size: 30px;
@@ -29,60 +32,62 @@ class Nav extends Component {
     render() {
         const isAuthenticated = this.props.isAuthenticated;
         return (
-            <div className="outerNavDiv">
-                <div className="navBod">
-                    {/* <img className='imgs' src={Logo} alt="" /> */}
-                    <h1 className="big">Big Eyes Esthetics</h1>
-                    <div className="menuOptions">
-                        <div className="navBod_nav guest">
-                            <button className="dropbtn">Menu</button>
-                            <div className="nav_dropdwn">
-                                <StyledLink smooth="true" className='links' to="/#home">Home</StyledLink>
-                                <StyledLink smooth="true" className='links' to="/#about">About</StyledLink>
-                                <StyledLink smooth="true" className='links' to="/#options">Options</StyledLink>
-                                <StyledLink smooth="true" className='links' to="/#contact">Contact</StyledLink>
-                                <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
-                                    <div className="social_icon">
-                                        <img src={instagram} />
-                                        <h1>Instagram</h1>
-                                    </div>
-                                </a>
-                            </div>
-                            {isAuthenticated ? <div className="navBod_nav user">
-                                <button className="dropbtn">Username</button>
-                                <div className="nav_dropdwn user">
-                                    <a><StyledLink className='links' to="/upload">Upload Content</StyledLink></a>
-                                    <a className='links' onClick={this.props.logout}>Logout</a>
+            <NavWrap id="top">
+                <div className="outerNavDiv">
+                    <div className="navBod">
+                        {/* <img className='imgs' src={Logo} alt="" /> */}
+                        <h1 className="big">Big Eyes Esthetics</h1>
+                        <div className="menuOptions">
+                            <div className="navBod_nav guest">
+                                <button className="dropbtn">Menu</button>
+                                <div className="nav_dropdwn">
+                                    <StyledLink smooth="true" className='links' to="/#home">Home</StyledLink>
+                                    <StyledLink smooth="true" className='links' to="/#about">About</StyledLink>
+                                    <StyledLink smooth="true" className='links' to="/#options">Options</StyledLink>
+                                    <StyledLink smooth="true" className='links' to="/#contact">Contact</StyledLink>
+                                    <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
+                                        <div className="social_icon">
+                                            <img src={instagram} />
+                                            <h1>Instagram</h1>
+                                        </div>
+                                    </a>
                                 </div>
-                            </div> : null}
+                                {isAuthenticated ? <div className="navBod_nav user">
+                                    <button className="dropbtn">Username</button>
+                                    <div className="nav_dropdwn user">
+                                        <a><StyledLink className='links' to="/upload">Upload Content</StyledLink></a>
+                                        <a className='links' onClick={this.props.logout}>Logout</a>
+                                    </div>
+                                </div> : null}
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="functionalDiv">
-                    {/* <h1 className="smallBig">Big Eyes Esthetics</h1> */}
-                    <nav role="navigation">
-                        <div className="menuToggle">
-                            <input type="checkbox" />
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                    <div className="functionalDiv">
+                        {/* <h1 className="smallBig">Big Eyes Esthetics</h1> */}
+                        <nav role="navigation">
+                            <div className="menuToggle">
+                                <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
 
-                            <ul className="menu">
-                                <StyledLink smooth="true" className="navLink" to="/#home"><li>Home</li></StyledLink>
-                                <StyledLink smooth="true" className="navLink" to="/#about"><li>About Me</li></StyledLink>
-                                <StyledLink smooth="true" className="navLink" to="/#options"><li>Options</li></StyledLink>
-                                <StyledLink smooth="true" className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
-                                <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
-                                    <div className="social_icon">
-                                        <img src={instagram} />
-                                        <h1>Instagram</h1>
-                                    </div>
-                                </a>
-                            </ul>
-                        </div>
-                    </nav>
+                                <ul className="menu">
+                                    <StyledLink smooth="true" className="navLink" to="/#home"><li>Home</li></StyledLink>
+                                    <StyledLink smooth="true" className="navLink" to="/#about"><li>About Me</li></StyledLink>
+                                    <StyledLink smooth="true" className="navLink" to="/#options"><li>Options</li></StyledLink>
+                                    <StyledLink smooth="true" className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
+                                    <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
+                                        <div className="social_icon">
+                                            <img src={instagram} />
+                                            <h1>Instagram</h1>
+                                        </div>
+                                    </a>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-            </div>
+            </NavWrap>
         )
     }
 }

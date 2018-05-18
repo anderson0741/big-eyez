@@ -31,7 +31,7 @@ function Top() {
     return (
         <div>
             <But>
-                <StyledLink smooth="true" className='links' to="/#home">^</StyledLink>
+                <StyledLink smooth="true" className='links' to="/#top">^</StyledLink>
             </But>
         </div>
     )
