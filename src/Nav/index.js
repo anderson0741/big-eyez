@@ -69,8 +69,8 @@ class Nav extends Component {
 
                             <ul className="menu">
                                 <StyledLink smooth="true" className="navLink" to="/#home"><li>Home</li></StyledLink>
-                                <StyledLink smooth="true" className="navLink" to="/#options"><li>Options</li></StyledLink>
                                 <StyledLink smooth="true" className="navLink" to="/#about"><li>About Me</li></StyledLink>
+                                <StyledLink smooth="true" className="navLink" to="/#options"><li>Options</li></StyledLink>
                                 <StyledLink smooth="true" className="navLink" to="/#contact"><li>Contact Us</li></StyledLink>
                                 <a className="social" href="https://www.instagram.com/marys.esthetics/?hl=en">
                                     <div className="social_icon">

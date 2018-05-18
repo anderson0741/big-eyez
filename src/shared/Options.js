@@ -7,7 +7,8 @@ import './Options.css'
 const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
-    color: black;
+    color: white;
+    text-shadow: black 3px 3px 3px;
     background: rgba(205, 160, 40, 0.5);
     height: 100vh;
     width: 100%;

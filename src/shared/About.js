@@ -6,12 +6,14 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     color: white;
+    text-shadow: black 3px 3px 3px;
     background: rgba(105, 60, 46, 0.5);
-    height: 100vh;
+    height: 150vh;
     width: 100%;
 
-    @media (max-width: 420px){
-        height: 900px;
+    @media (max-width: 786px){
+        height: 210vh;
+        text-align: center;
     }
     
 `;
@@ -40,9 +42,6 @@ const Form = styled.form`
     border: none;
     width: 350px;
 `;
-const Cont = styled.h1`
-    font-size: 3vw;
-`;
 const But = styled.button`
     margin-top: 5px;
     width: 60px;
@@ -54,7 +53,16 @@ const StyledInput = styled.input`
 const SubHead = styled.h4`
     align-self: center;
     margin: auto;
-    width: 330px;
+    @media (max-width: 787px){
+        height: 200px;
+        width: 330px;
+        font-size: 5vh;
+    }
+    @media (min-width: 786px){
+        height: 200px;
+        width: 800px;
+        font-size: 5vh;
+    }
 `;
 const TextBox = styled.textarea`
     height: 100px;
