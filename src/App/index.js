@@ -7,6 +7,7 @@ import Home from '../shared/Home';
 import About from '../shared/About';
 import Contact from '../shared/Contact';
 import Options from '../shared/Options';
+import Top from '../Nav/Top';
 
 import styled from 'styled-components';
 import '../styles/app.css';

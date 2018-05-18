@@ -1,7 +1,11 @@
 import React from 'react'
 import styled from 'styled-components';
 import Mary from '../images/Mary.jpg';
+import Top from '../Nav/Top';
 
+const Contactw = styled.section`
+    background: rgba(135, 97, 67, 0.5);
+`
 const Wrapper = styled.section`
     display: flex;
     justify-content: center;
@@ -48,26 +52,24 @@ const TextBox = styled.textarea`
 
 function Contact() {
     return (
-        <Wrapper id="contact">
-            {/* <Main>
-                <h1>Contact Me</h1>
-                <p>I am an Esthetician.</p>
-                <Image src={Mary} alt="Pic of Mary" />
-            </Main> */}
-            <Content>
-                <div>
-                    <Cont>Contact</Cont>
-                    <SubHead>Questions?</SubHead>
-                    <Form method="post">
-                        <input type="hidden" name="form-name" value="contact" />
-                        <p><StyledInput type="text" name="name" placeholder="Name" /></p>
-                        <p><StyledInput type="email" name="email" placeholder="Enter email" /></p>
-                        <p><TextBox name="message" placeholder="Your Message" /></p>
-                        <p><But type="submit">Send</But></p>
-                    </Form>
-                </div>
-            </Content>
-        </Wrapper>
+        <Contactw>
+            <Wrapper id="contact">
+                <Content>
+                    <div>
+                        <Cont>Contact</Cont>
+                        <SubHead>Questions?</SubHead>
+                        <Form method="post">
+                            <input type="hidden" name="form-name" value="contact" />
+                            <p><StyledInput type="text" name="name" placeholder="Name" /></p>
+                            <p><StyledInput type="email" name="email" placeholder="Enter email" /></p>
+                            <p><TextBox name="message" placeholder="Your Message" /></p>
+                            <p><But type="submit">Send</But></p>
+                        </Form>
+                    </div>
+                </Content>
+            </Wrapper>
+            <Top />
+        </Contactw>
     )
 }
 
