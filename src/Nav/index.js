@@ -27,7 +27,7 @@ const StyledLink = styled(Link) `
     }
 `;
 
-// Test 3
+// Test 4
 class Nav extends Component {
     render() {
         const isAuthenticated = this.props.isAuthenticated;
